@@ -37,7 +37,11 @@ MacOS可以 sudo defaults write /Library/Preferences/SystemConfiguration/com.app
 ### iOS/iPadOS快捷指令
 https://www.icloud.com/shortcuts/d2b1540b4dcc439886257fd50ed96ecd
 ### MacOS
-
+Python打包
+打包使用的包：py2app
+py2applet --make-setup XXX.py
+python/python3 setup py2app
+代码见/src文件夹
 ## ps
 #### 添加他人分享的快捷指令前需要打开"允许不受信任的快捷指令"
 方法：设置-快捷指令-查看上述开关是否锁死-
