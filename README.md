@@ -35,7 +35,8 @@ MacOS可以 sudo defaults write /Library/Preferences/SystemConfiguration/com.app
 但要手动开浏览器进a.nuist.edu.cn记住密码）
 ## 链接或代码
 ### iOS/iPadOS快捷指令
-https://www.icloud.com/shortcuts/d2b1540b4dcc439886257fd50ed96ecd
+[https://www.icloud.com/shortcuts/cf8c607bb406467ab15404a6e255e1b1]
+
 ### MacOS
 Python打包
 打包使用的包：py2app
