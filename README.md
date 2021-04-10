@@ -33,7 +33,7 @@ Unicom/CMCC/ChinaNet
 1. 在WiFi设置中关闭i-NUIST的自动登录选项
 2. 在快捷指令中填入username（校园网的用户名），password（校园网的密码），运营商（中国联通/中国移动/中国电信）
 3. 将快捷指令添加到主屏幕或小组件
-出现“无法添加不受信任的快捷指令”：[ps]:#ps
+出现“无法添加不受信任的快捷指令”：[ps]: #ps "ps"
 ## 缘由
 iOS端虽然可以点击wifi设置禁止自动登录实现，但Safari中"认证域"表单仍然显示"南京信息工程大学"，点击后该选项和此前记住密码的选项同时勾选~~十分玄学~~
 MacOS可以 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -boolean false
