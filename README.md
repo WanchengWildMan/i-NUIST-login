@@ -1,4 +1,4 @@
-# i--NUIST-login for iOS/ipadOS/MacOS
+# i--NUIST-login for ~~iOS/ipadOS/MacOS~~ all platform
 南京信息工程大学校园网登录
 # v2新版本
 ## 认证POST api
@@ -22,9 +22,35 @@ eg： {"username":"123123123","password":"123123","channel":"4","ifautologin":"1
 | 中国联通 | 4    |
 ### ip地址GET api
 http://a.nuist.edu.cn/api/v1/login
-### iOS快捷指令
+#### ~~正文开始~~
+### iOS快捷指令()
+https://www.icloud.com/shortcuts/25f586a9791c4e66aa4533a939d6663d
+### python脚本示例
+``` python
+import requests
+import ast
+import time
+r=requests.get("http://a.nuist.edu.cn/api/v1/ip")
+ipinfo=ast.literal_eval(r.text)
+print(ipinfo)
+f="data"
 
-
+r=requests.post(url="http://a.nuist.edu.cn/api/v1/login",data=\
+    r'{"username":"xxxxxxxxxx","password":"xxxxxx","channel":"X","ifautologin":"1","pagesign":"secondauth","usripadd":"'+ipinfo[f]+r'"}')
+print(r.text)
+time.sleep(0.3)
+```
+### curl chrome抓包直接复制
+windows cmd
+``` bat
+curl "http://a.nuist.edu.cn/api/v1/login" ^
+  --data-raw "^{^\^"username^\^":^\^"xxxxxxxx^\^",^\^"password^\^":^\^"xxxxx^\^",^\^"channel^\^":^\^"4^\^",^\^"ifautologin^\^":^\^"1^\^",^\^"pagesign^\^":^\^"secondauth^\^",^\^"usripadd^\^":^\^"你的ip地址^\^"^}" 
+```
+非win
+``` sh
+curl "http://a.nuist.edu.cn/api/v1/login" \
+  --data-raw "^{^\^"username^\^":^\^"xxxxxxxx^\^",^\^"password^\^":^\^"xxxxx^\^",^\^"channel^\^":^\^"4^\^",^\^"ifautologin^\^":^\^"1^\^",^\^"pagesign^\^":^\^"secondauth^\^",^\^"usripadd^\^":^\^"你的ip地址^\^"^}" 
+```
 # v1老版本
 ## 原理
 通过发送http请求模拟登陆
