@@ -13,7 +13,8 @@ http://a.nuist.edu.cn/api/v1/login
 python requests 参数传到body中，作为一个字符串，不要传到json
 ### body格式
 {"username":"<用户名>","password":"<登录密码>","channel":"<1|2|3|4>","ifautologin":"1","pagesign":"secondauth","usripadd":"<ip地址>"}
-eg： {"username":"123123123","password":"123123","channel":"4","ifautologin":"1","pagesign":"secondauth","usripadd":""}
+
+eg： ```{"username":"123123123","password":"123123","channel":"4","ifautologin":"1","pagesign":"secondauth","usripadd":""}```
 ##### channel取值
 | 运营商   | 取值 |
 | -------- | ---- |
