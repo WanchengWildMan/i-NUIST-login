@@ -1,6 +1,17 @@
 # i--NUIST-login for iOS/ipadOS/MacOS
 南京信息工程大学校园网登录
-### 校园网认证接口完全更换，已失效，正在努力中。。。
+# v2新版本
+## header
+#### Content-Type 不是application/json !!
+#### Content-Type 不是application/json !!
+#### Content-Type 不是application/json !!
+### Content-Type 不写！！！
+## body格式
+{"username":"<用户名>","password":"<登录密码>","channel":"<1|2|3|4>","ifautologin":"1","pagesign":"secondauth","usripadd":""}
+eg： {"username":"123123123","password":"123123","channel":"4","ifautologin":"1","pagesign":"secondauth","usripadd":""}
+#### channel取值
+
+# v1老版本
 ## 原理
 通过发送http请求模拟登陆
 ### 请求头
