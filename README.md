@@ -1,4 +1,4 @@
-# i--NUIST-login for ~~iOS/ipadOS/MacOS~~ all platform
+# i-NUIST-login for ~~iOS/ipadOS/MacOS~~ all platform
 南京信息工程大学校园网登录
 # v2新版本
 ## 认证POST api
